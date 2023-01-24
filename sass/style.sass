@@ -1,0 +1,32 @@
+.container
+  width: 1000px
+  margin: 0 auto
+  background: darkgray
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-rows: 80px 150px 300px 80px
+  gap: 20px
+
+
+.item
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 24px
+  font-family: sans-serif
+  font-weight: 800
+  background: aqua
+
+.header
+  grid-column: 1 / -1
+
+
+.sidebar
+  grid-area: 2 / -2 / 4 / -1
+
+.main
+  grid-column: 1 / -2
+
+.footer
+  grid-area: -2 / 1 / -1 / -1
+
